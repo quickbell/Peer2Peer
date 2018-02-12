@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Peer2Peer
 {
-    public partial class Form1 : Form
+    public partial class Peer2Peer : Form
     {
-        public Form1()
+        public Peer2Peer()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_Screen login = new Login_Screen();
+            login.ShowDialog();
         }
     }
 }
